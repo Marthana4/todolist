@@ -30,4 +30,4 @@ Route::get('/', function () {
 
 Route::get('user', [UserController::class, 'index']);
 Auth::routes();
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [TodoController::class, 'index'])->name('home');
